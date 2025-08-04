@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { PostComponent } from './post'
 import { TopBar } from './topbar'
+import { ToggleMessage } from './toggle'
+import { Timer } from './countdown'
+import { Card } from './children'
 
 export default function App() {
   return <div>
@@ -9,6 +12,10 @@ export default function App() {
       hi there
     </b>
     <Counter></Counter>
+    <Timer></Timer>
+    <Card>
+    <ToggleMessage></ToggleMessage>
+    </Card>
     <PostComponent name={"John Wick"} subtitle={"@johnwick"} time={"1h"} image={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkstKKj8JBx7d7mIlBbHgq4GjWBGZNDmWCushEzConxED0-43T6uehwc&s=10"} description={"Babayaga"} />
     <PostComponent name={"Mohd Arshad"} subtitle={"@arshad"} time={"2h"} image={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ16WLAVKBaJIDh1bieHixwokBks6QIFIasiyRcSBj6AbNBKkYQUIjpSp8&s=10"} description={"Sick!"} />
   </div>
